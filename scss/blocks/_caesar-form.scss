@@ -1,0 +1,145 @@
+.caesar-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.caesar-form__input-wrapper {
+  position: relative;
+  z-index: 1;
+
+  &:hover {
+    .caesar-form__output-copy {
+      display: block;
+    }
+  }
+}
+
+.caesar-form__input {
+  padding: 8px;
+  border: none;
+  border-radius: 2px;
+  resize: none;
+  background-color: rgba(8, 32, 50, 0.5);
+  backdrop-filter: blur(5px);
+  box-shadow: 0px 1px 2px rgba(8, 32, 50, 0.5);
+  transition: box-shadow 0.2s ease,
+  background-color 0.4s ease;
+
+  &:focus {
+    box-shadow: 0px 1px 15px rgba(51, 71, 86, 0.5);
+    outline: none;
+    background-color: rgba(51, 71, 86, 0.5)     ;
+  }
+}
+
+.caesar-form__selections {
+  display: flex;
+  flex-direction: column;
+}
+
+.caesar-form__clear-btn {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+  margin-bottom: 12px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background-image: url(../img/icon/clear-btn.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #082032;
+  cursor: pointer;
+  box-shadow: 0px 2px 2px rgba(8, 32, 50, 0.5);
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    box-shadow: 0px 0px 2px rgba(8, 32, 50, 0.5);
+  }
+}
+
+.caesar-form__output-copy {
+  display: none;
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  z-index: 1;
+  bottom: 12px;
+  right: 3px;
+  padding: 0;
+  border: none;
+  background-image: url(../img/icon/copy-btn.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6  ;
+  }
+} 
+
+.caesar-form__select {
+  margin-bottom: 12px;
+  padding: 12px;
+  border: none;
+  border-radius: 2px;
+  color: #F0A500;
+  background-color: #082032;
+  box-shadow: 0px 2px 2px rgba(8, 32, 50, 0.5);
+}
+
+.casear-form__submit {
+  padding: 12px;
+  border: none;
+  border-radius: 2px;
+  color: #F0A500;
+  background-color: #082032;
+  box-shadow: 0px 2px 2px rgba(8, 32, 50, 0.5);
+}
+
+
+@include breakpoint-down(738px) {
+
+  .caesar-form {
+    flex-direction: column;
+  }
+
+  .caesar-form__input-wrapper {
+    margin-bottom: 10px;
+  }
+
+  .caesar-form__selections {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    order: -1;
+    margin-bottom: 14px;
+  }
+
+  .caesar-form__clear-btn {
+    margin-bottom: 0;
+    margin-right: 14px;
+  }
+
+  .caesar-form__select {
+    margin-bottom: 0;
+    margin-right: 14px;
+  }
+
+  .caesar-form__output-copy {
+    display: block;
+  }
+
+}

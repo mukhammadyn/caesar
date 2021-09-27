@@ -1,0 +1,26 @@
+.site-header {
+  padding-top: 18px;
+  padding-bottom: 18px;
+  background-color: #000;
+}
+
+.site-header__link {
+  padding: 8px;
+  border: 2px solid #F0A500;
+  border-radius: 2px;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #F0A500;
+  transition: background-color 0.3s ease,
+  color 0.3s ease;
+
+  &:hover {
+    background-color: #F0A500;
+    color: #082032;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +8,11 @@
   <title>Caesar</title>
   <link rel="stylesheet" href="css/main.min.css">
 </head>
+
 <body>
   <header class="site-header">
     <div class="site-header__container container">
-      <a class="site-header__link" href="caesar-reverse.html">reverse</a>
+      <a class="site-header__link" href="index.html">!reverse</a>
     </div>
   </header>
 
@@ -20,16 +22,17 @@
       <div class="site-hero__container container">
         <h2 class="site-hero__heading">Caesar</h2>
         <form class="site-hero__form caesar-form" action="https://echo.htmlacademy.ru" method="post">
-          
+
           <label class="visually-hidden" for="user-text">Text to caesar</label>
-          <div class="caesar-form__input-wrapper">
-            <textarea class="caesar-form__input js-input-text" name="text" id="user-text" cols="30" rows="10" maxlength="2100" autofocus></textarea>
+          <div class="casear-form__input-wrapper">
+            <textarea class="caesar-form__input js-input-text" name="text" id="user-text" cols="30" rows="10"
+              maxlength="2100" autofocus></textarea>
           </div>
 
           <div class="caesar-form__selections">
             <button class="caesar-form__clear-btn js-clear-btn" type="reset"></button>
-            
-            
+
+
             <select class="caesar-form__select js-rotate-select" name="rotate" aria-label="rotate">
               <option value="1">ROT 1</option>
               <option value="2">ROT 2</option>
@@ -57,28 +60,23 @@
               <option value="24">ROT 24</option>
               <option value="25">ROT 25</option>
             </select>
+            <button class="casear-form__submit js-form-btn" type="button">cipher</button>
           </div>
-          <div class="caesar-form__input-wrapper">
-            <textarea class="caesar-form__input js-output-text" style="user-select: none;" cols="30" rows="10" maxlength="2100" readonly></textarea>
+          <div class="casear-form__input-wrapper">
+            <textarea class="caesar-form__input js-output-text" style="user-select: none;" cols="30" rows="10"
+              maxlength="2100" readonly></textarea>
             <button class="caesar-form__output-copy js-copy-btn" type="button" aria-label="copy text to clipboard">
 
             </button>
           </div>
 
-          
         </form>
 
       </div>
     </section>
   </main>
 
-  <!-- <footer class="site-footer">
-    <div class="site-footer__container container">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem tempora rem ipsa odio necessitatibus numquam similique temporibus possimus eveniet repudiandae!
-    </div>
-  </footer> -->
-
-
   <script src="js/main.js"></script>
 </body>
+
 </html>

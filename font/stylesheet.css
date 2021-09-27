@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Caesar Dressing';
+    src: url('CaesarDressing.woff2') format('woff2'),
+        url('CaesarDressing.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

@@ -1,0 +1,18 @@
+.site-hero {
+  padding-top: 90px;
+}
+
+.site-hero__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.site-hero__heading {
+  margin-top: 0;
+  margin-bottom: 18px;
+  text-align: center;
+  font-size: 40px;
+  text-shadow: 0px 2px 4px #082032;
+  letter-spacing: 3px;
+  color: #082032;
+}
