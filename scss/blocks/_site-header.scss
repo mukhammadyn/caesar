@@ -24,3 +24,13 @@
     opacity: 0.7;
   }
 }
+
+@include breakpoint-down(375px) {
+
+  .site-header__link {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+  }
+
+}

@@ -1,4 +1,4 @@
-if (document.location.href.includes('index.html')) {
+if (document.location.href.includes('/index.html')) {
   // COPY TO CLIPBOARD  
   const elCaesarOutput = document.querySelector('.js-output-text');
   const elCaesarOutputCopyBtn = document.querySelector('.js-copy-btn');

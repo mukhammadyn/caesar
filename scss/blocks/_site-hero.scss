@@ -16,3 +16,20 @@
   letter-spacing: 3px;
   color: #082032;
 }
+
+
+@include breakpoint-down(768px) {
+
+  .site-hero {
+    padding-top: 40px;
+  }
+
+}
+
+@include breakpoint-down(400px) {
+
+  .site-hero {
+    padding-top: 20px;
+  }
+
+}

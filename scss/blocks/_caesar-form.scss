@@ -17,6 +17,8 @@
 }
 
 .caesar-form__input {
+  width: 350px;
+  height: 300px;
   padding: 8px;
   border: none;
   border-radius: 2px;
@@ -98,6 +100,8 @@
   color: #F0A500;
   background-color: #082032;
   box-shadow: 0px 2px 2px rgba(8, 32, 50, 0.5);
+  cursor: pointer;
+
 }
 
 .casear-form__submit {
@@ -107,10 +111,46 @@
   color: #F0A500;
   background-color: #082032;
   box-shadow: 0px 2px 2px rgba(8, 32, 50, 0.5);
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    box-shadow: 0px 0px 2px rgba(8, 32, 50, 0.5);
+  }
+}
+
+@include breakpoint-down(890px) {
+
+  .caesar-form__input {
+    width: 300px;
+    height: 250px;  
+  }
+
 }
 
 
-@include breakpoint-down(738px) {
+@include breakpoint-down(786px) {
+
+  .caesar-form__input {
+    width: 270px;
+    height: 245px; 
+  }
+
+}
+
+@include breakpoint-down(697px) {
+
+  .caesar-form__input {
+    width: 250px;
+    height: 220px; 
+  }
+
+}
+
+@include breakpoint-down(650px) {
 
   .caesar-form {
     flex-direction: column;
@@ -119,6 +159,12 @@
   .caesar-form__input-wrapper {
     margin-bottom: 10px;
   }
+
+  .caesar-form__input {
+    width: 350px;
+    height: 200px; 
+  }
+
 
   .caesar-form__selections {
     flex-direction: row;
@@ -140,6 +186,33 @@
 
   .caesar-form__output-copy {
     display: block;
+  }
+
+}
+
+@include breakpoint-down(375px) {
+
+  .caesar-form__input {
+    width: 300px;
+    height: 220px; 
+  }
+
+}
+
+@include breakpoint-down(320px) {
+
+  .caesar-form__input {
+    width: 280px;
+    height: 200px; 
+  }
+
+}
+
+@include breakpoint-down(290px) {
+
+  .caesar-form__input {
+    width: 270px;
+    height: 200px; 
   }
 
 }
